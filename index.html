@@ -25,6 +25,9 @@ hr {
   clear: both;
 }
 @media all and (min-width: 777px) {
+  .layout__wide {
+    clear: both;
+  }
   section {
     float: left;
     box-sizing: border-box;
@@ -47,9 +50,15 @@ hr {
 
 <div class="layout">
 
+<header class="layout__wide">
 <h1>Responsive image tests
 <subhead>comparing &lt;img&gt;, &lt;picture&gt; and &lt;svg&gt; solutions</subhead>
 </h1>
+
+<p>
+Some live tests to allow testing and comparison of the picture element with polyfil, an SVG image using the clown car technique, and some basic img elements.
+</p>
+</header>
 
 <section class="layout__left">
 <hr>
@@ -127,7 +136,7 @@ This test uses an &lt;object&gt; tag containing a SVG image encoded as a data UR
 <p>?</p>
 </section>
 
-<footer>
+<footer class="layout__wide">
 <small>Tests compiled in 2013 by John Albin Wilkins. <a href="http://twitter.com/JohnAlbin">@JohnAlbin</a>. <a href="http://github.com/JohnAlbin/respimg-tests">Github</a>.</small>
 </footer>
 
