@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Responsive image tests</title>
+<link rel="stylesheet" href="css/style.css" media="all">
+<style>
+h3,
+h3 + p {
+  margin: 0;
+}
+hr {
+  width: 80%;
+  height: 1px;
+  background-color: #ccc;
+  border-style: none;
+  margin: 3em auto 1.5em auto;
+}
+</style>
+<meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+<div class="layout">
+
+<h1>Responsive image tests
+<subhead>comparing &lt;img&gt;, &lt;picture&gt; and &lt;svg&gt; solutions</subhead>
+</h1>
+
+<hr>
+
+<h2>Baseline performance</h2>
+
+<p>
+This test uses an &lt;img&gt; tag with a small jpeg. It is not a responsive image technique. It’s simply used as a comparison for other tests.
+</p>
+
+<p>
+<a href="tests/img-small">test</a> | waterfall chart
+</p>
+
+<h3>Expected results:</h3>
+<p>Blazing fast</p>
+<h3>Actual results:</h3>
+<p>?</p>
+
+<hr>
+
+<h2>Juvenalia technique</h2>
+
+<p>
+This test uses the very first “responsive image” technique. Just slap some CSS on the &lt;img&gt; to shrink a very large image to fit the viewport.
+</p>
+
+<p>
+<a href="tests/img-large/">test</a> | waterfall chart
+</p>
+
+<h3>Expected results:</h3>
+<p>Atrocious</p>
+<h3>Actual results:</h3>
+<p>?</p>
+
+<hr>
+
+<h2>Picture element with polyfil</h2>
+
+<p>
+This test uses the proposed &lt;picture&gt; element along with a JavaScript polyfil.
+</p>
+
+<p>
+<a href="tests/picture/">test</a> | waterfall chart
+</p>
+
+<h3>Expected results:</h3>
+<p>?</p>
+<h3>Actual results:</h3>
+<p>?</p>
+
+<hr>
+
+<h2>Clowncar technique</h2>
+
+<p>
+This test uses an &lt;object&gt; tag containing a SVG image encoded as a data URI.
+</p>
+
+<p>
+<a href="tests/clown-car/">test</a> | waterfall chart
+</p>
+
+<h3>Expected results:</h3>
+<p>?</p>
+<h3>Actual results:</h3>
+<p>?</p>
+
+</div>
+
+</body>
+</html>
