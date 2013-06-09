@@ -5,6 +5,11 @@
 <title>Responsive image tests</title>
 <link rel="stylesheet" href="css/style.css" media="all">
 <style>
+header,
+section,
+footer {
+  display: block;
+}
 h3,
 h3 + p {
   margin: 0;
@@ -15,6 +20,9 @@ hr {
   background-color: #ccc;
   border-style: none;
   margin: 3em auto 1.5em auto;
+}
+footer {
+  padding-top: 3em;
 }
 .layout:before,
 .layout:after {
@@ -56,7 +64,7 @@ hr {
 </h1>
 
 <p>
-Some live tests to allow testing and comparison of the picture element with polyfil, an SVG image using the clown car technique, and some basic img elements.
+Some live tests to allow testing and comparison of the picture element with polyfil, an SVG image using the clown car technique, and some basic img elements. The code is available on <a href="http://github.com/JohnAlbin/respimg-tests">Github</a>.
 </p>
 </header>
 
@@ -137,7 +145,7 @@ This test uses an &lt;object&gt; tag containing a SVG image encoded as a data UR
 </section>
 
 <footer class="layout__wide">
-<small>Tests compiled in 2013 by John Albin Wilkins. <a href="http://twitter.com/JohnAlbin">@JohnAlbin</a>. <a href="http://github.com/JohnAlbin/respimg-tests">Github</a>.</small>
+<small>Tests compiled in 2013 by John Albin Wilkins. <a href="http://twitter.com/JohnAlbin">@JohnAlbin</a>.</small>
 </footer>
 
 </div>
