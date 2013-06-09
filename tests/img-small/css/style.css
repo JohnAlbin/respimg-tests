@@ -1,0 +1,19 @@
+/* Styling for a proposed HTML5 element. */
+subhead {
+  display: block;
+  font-size: 75%;
+  font-weight: normal;
+}
+
+/* Standard CSS for fluid images. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Token layout. */
+.layout {
+  max-width: 1200px;
+  width: 90%;
+  margin: 1.5em auto;
+}
