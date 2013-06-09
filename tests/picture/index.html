@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Responsive image using: img with small jpeg image</title>
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="css/style.css" media="all">
+<style>
+picture {
+  display: block;
+}
+</style>
+<script src="js/picturefill.min.js"></script>
+</head>
+<body>
+
+<div class="layout">
+
+<h1>Responsive image
+<subhead>using picture tag and polyfil</subhead>
+</h1>
+
+<picture alt="Moses!">
+<source src="images/S.jpg" width="333" height="333" />
+<source media="(min-width: 0px)" src="images/S.jpg"  width="333" height="333" />
+<source media="all and (min-width: 334px) and (max-width: 666px)" src="images/M.jpg"  width="666" height="666" />
+<source media="all and (min-width: 667px) and (max-width: 999px)" src="images/L.jpg"  width="999" height="999" />
+<source media="all and (min-width: 1000px)" src="images/XL.jpg"  width="1222" height="1222" />
+<noscript>
+<img src="images/noscript.jpg" width="333" height="333" alt="Moses!">
+</noscript>
+</picture>
+
+</div>
+
+</body>
+</html>
