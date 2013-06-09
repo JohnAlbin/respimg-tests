@@ -1,0 +1,29 @@
+<svg viewBox='0 0 333 333' preserveAspectRatio='xMidYMid meet' xmlns='http://www.w3.org/2000/svg'>
+<title>Clown Car Technique</title>
+<style>
+svg {
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 333px) {
+  svg {
+    background-image: url(http://johnalbin.github.io/respimg-tests/tests/clown-car/images/S.jpg);
+  }
+}
+@media screen and (min-width: 334px) {
+  svg {
+    background-image: url(http://johnalbin.github.io/respimg-tests/tests/clown-car/images/M.jpg);
+  }
+}
+@media screen and (min-width: 667px) {
+  svg {
+    background-image: url(http://johnalbin.github.io/respimg-tests/tests/clown-car/images/L.jpg);
+  }
+}
+@media screen and (min-width: 1000px) {
+  svg {
+    background-image: url(http://johnalbin.github.io/respimg-tests/tests/clown-car/images/XL.jpg);
+  }
+}
+</style>
+</svg>
